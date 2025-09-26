@@ -31,5 +31,10 @@ public class User {
         this.email = email;
         this.age = age;
     }
+    public User(String username, int age){
+        this.username = username;
+        this.age = age;
+    }
+
 
 }

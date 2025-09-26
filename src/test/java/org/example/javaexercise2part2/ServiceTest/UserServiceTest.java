@@ -1,5 +1,6 @@
 package org.example.javaexercise2part2.ServiceTest;
 
+import org.example.javaexercise2part2.Repository.UserRepository;
 import org.example.javaexercise2part2.Service.UserService;
 import org.example.javaexercise2part2.model.User;
 import org.junit.jupiter.api.Test;
@@ -15,6 +16,8 @@ public class UserServiceTest {
 
     @Autowired
     UserService userService;
+
+    UserRepository userRepository;
 
     @Test
     void shouldBeAbleToFindByUsername(){
@@ -40,6 +43,4 @@ public class UserServiceTest {
 
         assertThat(usersAbove30.size()).isEqualTo(7);
     }
-
-
 }
